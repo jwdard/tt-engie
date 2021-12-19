@@ -22,7 +22,7 @@ def use(list):
         if (isinstance(letter,int)): continue
         if not letter: continue
         if letter.isupper(): # Check if it's uppercase to apply the rule for below 'H'
-            response = (ascii.get(letter)*10, 0)[ascii.get(letter) >= 72] # I tried to make [letter.isupper() and alist.get(letter) >= 72] but it wouldn't work
+            response = (ascii.get(letter)*10, 0)[ascii.get(letter) >= 72]
         else: # Apply the rule for below 'h'
             response = (ascii.get(letter)*10, 0)[ascii.get(letter) >= 104]
         listToReturn.append(response)
